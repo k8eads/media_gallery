@@ -1,6 +1,7 @@
 /*-- primary variables --*/
 :root {
-    --background: #F2E9DC; 
+    --background: #222; 
+    --hfont: 'Roboto Condensed', sans-serif;
     font-size: 62.5%; 
 }
 
@@ -8,23 +9,25 @@
     color: var(--background);
 }
 
+body {
 
+}
 
 
 /*--Nav Styles--*/
-nav, footer{
-    background-color: #222;
+nav,footer {
+    background-color:var(--background);
     color: #EAEAEA;
+    font-family: var(--hfont);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    font-family: 'Roboto Condensed', sans-serif;
 }
 footer {
     justify-content: center;
-    margin-top: 50vh;
 }
+
 nav img{
     width: 6rem; 
     height: auto;
