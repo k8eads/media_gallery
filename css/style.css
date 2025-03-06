@@ -1,0 +1,61 @@
+/*-- primary variables --*/
+:root {
+    --background: #F2E9DC; 
+    font-size: 62.5%; 
+}
+
+::selection {
+    color: var(--background);
+}
+
+
+
+
+/*--Nav Styles--*/
+nav, footer{
+    background-color: #222;
+    color: #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+footer {
+    justify-content: center;
+    margin-top: 50vh;
+}
+nav img{
+    width: 6rem; 
+    height: auto;
+    vertical-align: middle;
+}
+
+.logo-links {
+    flex: 1;
+    font-size: 2.4rem;
+}
+.nav-links a {
+    margin-right: 4em;
+    font-size: 1.6rem;
+}
+.nav-links a:last-of-type {
+    margin-right: .5em;
+}
+
+
+.link {
+    font-size: 1.6rem;
+}
+.linka {
+    font-size: 1.6rem;
+    color: #FADB00;
+}
+
+.logo {
+    transition: 0.3s ease-in-out;
+    opacity: .7;
+}  
+.logo:hover {
+    opacity: 1;
+} 
