@@ -2,6 +2,9 @@
 :root {
     --background: #222; 
     --hfont: 'Roboto Condensed', sans-serif;
+    --bfont: 'Overpass', sans-serif;
+    --linka: #FADB00;
+    --white: #EAEAEA;
     font-size: 62.5%; 
 }
 
@@ -10,22 +13,25 @@
 }
 
 body {
-
+    height: 100vh;
 }
 
 
 /*--Nav Styles--*/
-nav,footer {
+nav, .site-footer{
     background-color:var(--background);
-    color: #EAEAEA;
+    color: var(--white);
     font-family: var(--hfont);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
 }
-footer {
+.site-footer {
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
     justify-content: center;
+
 }
 
 nav img{
@@ -46,13 +52,11 @@ nav img{
     margin-right: .5em;
 }
 
-
 .link {
     font-size: 1.6rem;
 }
 .linka {
-    font-size: 1.6rem;
-    color: #FADB00;
+    color: var(--linka);
 }
 
 .logo {
@@ -63,7 +67,7 @@ nav img{
     opacity: 1;
 } 
 
-/*-- Hero Styles --*/
+/*-- Slideshow Styles --*/
 .slideshow {
     position: relative; /*-- allows for children to be positioned absolutely --*/
     padding: 0;
@@ -75,7 +79,74 @@ nav img{
 }
 
 
-/*-- Grid Styles --*/
-.grid-container{
-    
+/*--Main Styles --*/
+main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin: 2rem 2vw;
 }
+
+/*-- Card Styles --*/
+.card {
+    background-color: var(--background);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: .3rem;
+}
+
+.info {
+
+}
+.info h1{
+    font-family: var(--hfont);
+    font-size: 3.0rem;
+    padding: .4rem 0rem;
+}
+.info h2{
+    font-family: var(--bfont);
+    font-size: 1.6rem;
+
+}
+.sub-info{
+    display: flex;
+    justify-content: space-between;
+}
+.actions {
+    display:flex;
+    justify-content: space-between;
+}
+.actions .left{
+
+}
+.actions .right{
+
+}
+
+
+/*-- Media Queries --*/
+@media screen and (max-width: 840px) {
+    nav {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    section.even, section.odd {
+        grid-template-columns: 1fr;
+    }
+    div.text {
+        align-items: center;
+    }
+}
+
+  /*-- Min-width Queries --*/
+  @media screen and (min-width: 550px) {
+    main{grid-template-columns:repeat(2, 1fr);}
+  }
+  @media screen and (min-width: 768px) {
+    main{grid-template-columns:repeat(3, 1fr);}
+    aside p {column-count: 2;}
+  }
+  @media screen and (min-width: 1080px) {
+    main{grid-template-columns:repeat(4, 1fr);}
+  }
