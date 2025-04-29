@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Overpass|Permanent+Marker" rel="stylesheet">
     <link href="css/reset.min.css" rel="stylesheet">
@@ -23,35 +24,129 @@
             <a class="link" href="omaha.html">Omaha '24</a>
             <a class="link" href="index.html">Red Rocks '24</a>
             <a class="link" href="oregon.html">Oregon '24</a>
-        </div>
+           </div>
     </nav>
     <section class="slideshow">
-        <figure class="slide"></figure>
-            <img src="media/img/joey_mh.jpg" alt="Joey Walker playing gutiar in black and white">
-
-        
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="media/img/joey_mh.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="media/img/acoustic_mh.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="media/img/stu_mh.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="media/img/synth_mh.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </section>
     <main>
         <article class="card"> <!-- Card Start-->
-            <!-- when clicking album cover it opens up pop up that will show setlist-->
             <header class="card-header">
-                <img src="media/img/dc_jg.png" alt="Live in D.C. album cover by Jason Galea">
+                <img src="media/img/miami_aj.png" alt="Live in Miami album cover by Jason Galea">
             </header>
             <footer class="card-footer">
                 <div class="info">
-                    <h1>Live in D.C. '24</h1>
+                    <h1>Live in Miami '24</h1>
                     <div class="sub-info">
-                        <h2>The Anthem<br>Washington, DC</h2>
-                        <h2>Aug. 15, 2024</h2>
+                        <h2>Factory Town<br>Miami, FL</h2>
+                        <h2>Nov. 21, 2024</h2>
                     </div>
                 </div>
-                <!-- implement actions to play, download, and like albums-->
-                <div class="actions">
-                    <div class="left">
-                        
+            </footer>
+        </article>
+        <article class="card"> <!-- Card Start-->
+            <header class="card-header">
+                <img src="media/img/austin_jg.png" alt="Live in Austin album cover by Jason Galea">
+            </header>
+            <footer class="card-footer">
+                <div class="info">
+                    <h1>Live in Austin '24</h1>
+                    <div class="sub-info">
+                        <h2>Germania Insurance Amphitheater<br>Austin, TX</h2>
+                        <h2>Nov. 15, 2024</h2>
                     </div>
-                    <div class="right">
-                        
+                </div>
+            </footer>
+        </article>
+        <article class="card"> <!-- Card Start-->
+            <header class="card-header">
+                <img src="media/img/sf_aj.png" alt="Live in San Francisco album cover by Amy Jean">
+            </header>
+            <footer class="card-footer">
+                <div class="info">
+                    <h1>Live in San Francisco '24</h1>
+                    <div class="sub-info">
+                        <h2>Regency Ballroom<br>San Francisco, CA</h2>
+                        <h2>Nov. 6, 2024</h2>
+                    </div>
+                </div>
+            </footer>
+        </article>
+        <article class="card"> <!-- Card Start-->
+            <header class="card-header">
+                <img src="media/img/stanford_jg.png" alt="Live in Stanford album cover by Jason Galea">
+            </header>
+            <footer class="card-footer">
+                <div class="info">
+                    <h1>Live in Stanford '24</h1>
+                    <div class="sub-info">
+                        <h2>Frost Amphitheater<br>Stanford, CA</h2>
+                        <h2>Nov. 4, 2024</h2>
+                    </div>
+                </div>
+            </footer>
+        </article>
+        <article class="card"> <!-- Card Start-->
+            <header class="card-header">
+                <img src="media/img/sd_jg.png" alt="Live in San Diego album cover by Jason Galea">
+            </header>
+            <footer class="card-footer">
+                <div class="info">
+                    <h1>Live in San Diego '24</h1>
+                    <div class="sub-info">
+                        <h2>The Rady Shell<br>San Diego, CA</h2>
+                        <h2>Nov. 2, 2024</h2>
+                    </div>
+                </div>
+            </footer>
+        </article>
+        <article class="card"> <!-- Card Start-->
+            <header class="card-header">
+                <img src="media/img/gorge_jg.png" alt="Live at the Gorge album cover by Jason Galea">
+            </header>
+            <footer class="card-footer">
+                <div class="info">
+                    <h1>Live at the Gorge '24</h1>
+                    <div class="sub-info">
+                        <h2>The Gorge Amphitheatre<br>Quincy, WA</h2>
+                        <h2>Sept. 14, 2024</h2>
+                    </div>
+                </div>
+            </footer>
+        </article>
+        <article class="card"> <!-- Card Start-->
+            <header class="card-header">
+                <img src="media/img/rr_jg.png" alt="Live at Red Rocks album cover by Jason Galea">
+            </header>
+            <footer class="card-footer">
+                <div class="info">
+                    <h1>Live at Red Rocks '24</h1>
+                    <div class="sub-info">
+                        <h2>Red Rocks Amphitheater<br>Morrison, CO</h2>
+                        <h2>Sept. 8 & 9, 2024</h2>
                     </div>
                 </div>
             </footer>
@@ -100,53 +195,48 @@
         </article>
         <article class="card"> <!-- Card Start-->
             <header class="card-header">
-                <img src="media/img/austin_jg.png" alt="Live in Austin album cover by Jason Galea">
+                <img src="media/img/nyc_jg.png" alt="Live in New York City album cover by Jason Galea">
             </header>
             <footer class="card-footer">
                 <div class="info">
-                    <h1>Live in Austin '24</h1>
+                    <h1>Live in New York City '24</h1>
                     <div class="sub-info">
-                        <h2>Germania Insurance Amphitheater<br>Austin, TX</h2>
-                        <h2>Nov. 15, 2024</h2>
+                        <h2>Forest Hills Stadium<br>Queens, NY</h2>
+                        <h2>Aug. 16 & 17, 2024</h2>
                     </div>
                 </div>
             </footer>
         </article>
-        <article class="card"> <!-- Card Start-->
+        <article class="card">
+            <!-- when clicking album cover it opens up pop up that will show setlist-->
             <header class="card-header">
-                <img src="media/img/gorge_jg.png" alt="Live at the Gorge album cover by Jason Galea">
+                <img src="media/img/dc_jg.png" alt="Live in D.C. album cover by Jason Galea">
             </header>
             <footer class="card-footer">
                 <div class="info">
-                    <h1>Live at the Gorge '24</h1>
+                    <h1>Live in D.C. '24</h1>
                     <div class="sub-info">
-                        <h2>The Gorge Amphitheatre<br>Quincy, WA</h2>
-                        <h2>Sept. 14, 2024</h2>
+                        <h2>The Anthem<br>Washington, DC</h2>
+                        <h2>Aug. 15, 2024</h2>
+                    </div>
+                </div>
+                <!-- implement actions to play, download, and like albums-->
+                <div class="actions">
+                    <div class="left">
+                        
+                    </div>
+                    <div class="right">
+                        
                     </div>
                 </div>
             </footer>
         </article>
-        <article class="card"> <!-- Card Start-->
-            <header class="card-header">
-                <img src="media/img/miami_aj.png" alt="Live in Miami album cover by Jason Galea">
-            </header>
-            <footer class="card-footer">
-                <div class="info">
-                    <h1>Live in Miami '24</h1>
-                    <div class="sub-info">
-                        <h2>Factory Town<br>Miami, FL</h2>
-                        <h2>Sept. 14, 2024</h2>
-                    </div>
-                </div>
-            </footer>
-        </article>
-
-
-
 
     </main>    
     <footer class="site-footer">
         <p>&copy; 2025 Kate Eads</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
 </body>
 </html>

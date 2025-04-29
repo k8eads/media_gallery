@@ -16,7 +16,6 @@ body {
     height: 100vh;
 }
 
-
 /*--Nav Styles--*/
 nav, .site-footer{
     background-color:var(--background);
@@ -53,10 +52,13 @@ nav img{
 }
 
 .link {
+    color: var(--white);
     font-size: 1.6rem;
+    text-decoration: none;
 }
 .linka {
     color: var(--linka);
+    text-decoration: none;
 }
 
 .logo {
